@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap" rel="stylesheet">
+    <title>Página de Vendas</title>
+    <script>
+        function searchFunction() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let items = document.querySelectorAll('.content-item');
+            
+            items.forEach(item => {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <section class="top-header">
+            <div class="interface">
+                <div class="logotipo">
+                    <a href="#">
+                        <img src="img/ChatGPT Image 2 de abr. de 2025, 13_53_50.png" alt="logotipo">
+                    </a> 
+                </div>
+                <div class="btn-social">
+                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                    <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bottom-header">
+          <div class="interface">
+              <nav>
+                  <ul>
+                      <li><a href="#">MATERIA 1</a></li>
+                      <li><a href="#">MATERIA 2</a></li>  
+                      <li><a href="#">MATERIA 3</a></li>  
+                      <li class="menu-drop">
+                          <a href="#">Outras materias <i class="bi bi-arrow-down-circle-fill"></i></a>
+                          <div class="drop">
+                              <a href="#" target="_blank">Materia 4</a>
+                              <a href="#" target="_blank">Materia 5</a> 
+                              <a href="#" target="_blank">Materia 6</a>  
+                          </div>
+                      </li>  
+                  </ul>
+              </nav> 
+              <!-- Campo de pesquisa alinhado à direita -->
+              <div class="search-container">
+                  <input type="text" id="search" placeholder="Buscar..." onkeyup="searchFunction()">
+              </div>
+          </div>
+      </section>
+      
+    </header>
+    
+    <main>
+        <section class="content">
+            <div class="content-item">Produto 1 - Descrição do produto</div>
+            <div class="content-item">Produto 2 - Outra descrição</div>
+            <div class="content-item">Serviço X - Informações detalhadas</div>
+            <div class="content-item">Serviço Y - Mais informações</div>
+        </section>
+    </main>
+</body>
+</html>

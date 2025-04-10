@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+/*menu começando aqui*/
+.interface{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: #242323;
+}
+
+.top-header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.top-header{
+    background-color: #051927;
+}
+
+.top-header .logotipo img {
+    display: flex; 
+    max-width: 70px;
+}
+
+.top-header .btn-social {
+    display: flex;
+    gap: 10px; 
+    margin-left: 30px; 
+    padding-right: 30px;
+}
+
+.top-header .btn-social button{
+    width: 50px;
+    height: 50px;
+    font-size: 20PX;
+    border-radius: 50%;
+    background-color:  transparent;
+    border: 2px solid 0 /*esse zero é só para n dar erro*/;
+    cursor: pointer;
+}
+
+.bottom-header {
+    height: 90px; /* Ajuste conforme necessário */
+    display: flex;
+    align-items: center; /* Mantém tudo alinhado no centro */
+    justify-content: space-between; /* Distribui os itens */
+    padding-top: 5px; /* Ajuste conforme necessário */
+}
+
+
+
+.bottom-header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    position: relative;
+    padding-top: 10%; /*alinhamento certical das materias */
+}
+
+.bottom-header nav ul li a{
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 20px;
+    display: block;
+    transition: .3s;
+}
+
+.bottom-header nav ul li a:hover{
+    color: #ffffff;
+    box-shadow: inset 0 0 8px #000000bd;
+}
+
+.menu-drop{
+    position: relative;
+}
+
+.menu-drop .drop {
+    position: absolute;
+    background-color:rgb(83, 65, 65);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-drop .drop a{
+    padding: 18px;
+}
+
+.menu-drop:hover .drop {
+    height: 190px;
+}
+
+/* Estilizando a barra de pesquisa */
+   /* Estilizar a barra de pesquisa */
+.search-container {
+    
+    display: flex;
+    margin-left: auto; /* Empurra para a direita */
+    justify-content: flex-end; /* Mantém alinhado à direita */
+    align-items: center;
+    padding-right: 20px; /* Espaço da direita */
+    top: -40px; /* Ajuste para subir um pouco */
+    position: relative;
+    right: -330px; /* Move para a direita */
+    top: -65px; /* Move para cima */
+}
+
+.search-container input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 250px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+.search-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
