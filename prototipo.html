@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Lei</title>
+</head>
+<body>
+  <h1>Cadastrar Lei</h1>
+
+  <form id="formLei">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br><br>
+
+    <label for="capitulo">Capítulo:</label>
+    <input type="text" id="capitulo" name="capitulo" required><br><br>
+
+    <label for="artigo">Artigo:</label>
+    <input type="text" id="artigo" name="artigo" required><br><br>
+
+    <label for="textoArtigo">Texto do Artigo:</label><br>
+    <textarea id="textoArtigo" name="textoArtigo" rows="5" cols="50"></textarea><br><br>
+
+    <label for="numeroLei">Número da Lei:</label>
+    <input type="text" id="numeroLei" name="numeroLei"><br><br>
+
+    <label for="dataLei">Data da Lei:</label>
+    <input type="date" id="dataLei" name="dataLei"><br><br>
+
+    <label for="descricaoLei">Descrição da Lei:</label><br>
+    <textarea id="descricaoLei" name="descricaoLei" rows="3" cols="50"></textarea><br><br>
+
+    <button type="button" id="button">Cadastrar</button>
+  </form>
+
+  <script type="module" src="prototipo.js" ></script> 
+  
+</body>
+</html>
